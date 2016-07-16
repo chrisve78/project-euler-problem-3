@@ -9,7 +9,7 @@ var maxPrimeFactor = function(number){
 
   for(var x = 2; x < largeNum; x++){
     while(largeNum % x === 0){
-      largeNum = largeNum / x;
+      largeNum /= x;
     }
   }
   return largeNum;
