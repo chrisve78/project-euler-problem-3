@@ -5,12 +5,14 @@ What is the alrgest prime factor of the number 600851475143?
 
 var maxPrimeFactor = function(number){
 
-  for(var x = 2; x < number; x++){
-    while(number % x === 0){
-      number = number / x;
+  largeNum = number;
+
+  for(var x = 2; x < largeNum; x++){
+    while(largeNum % x === 0){
+      largeNum = largeNum / x;
     }
   }
-  return number;
+  return largeNum;
 };
 
 var highest = maxPrimeFactor(600851475143);
