@@ -11,7 +11,9 @@ var maxPrimeFactor = function(number){
       number = number / x;
     }
   }
-  console.log(number);
+  return number;
 };
 
-maxPrimeFactor(600851475143);
+var highest = maxPrimeFactor(600851475143);
+
+console.log(highest);
